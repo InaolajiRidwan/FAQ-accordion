@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .wrapper {
+        background-image: url(assets/images/background-pattern-mobile.svg);
+        background-size: cover;
+        height: 300px;
+        width: 100vw;
+        background-repeat: no-repeat;
+      
+        
+      }
+
+      .wrapperlg {
+        background-image: url(assets/images/background-pattern-desktop.svg);
+        background-size: cover;
+        height: 500px;
+        width: 100vw;
+        background-repeat: no-repeat;      
+      }
+
+      p {
+        font-size: 16px;
+        
+      }
+
+
+      h4:hover   {
+        color: rgb(170, 43, 235);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+
+      body {
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-Lightpink justify-center">
+    <div class="wrapper md:hidden ">
+      <!-- <img class="bg-cover bg-center" src="assets/images/background-pattern-mobile.svg" alt=""> -->
+      
+    </div>
+    <div  class="wrapperlg hidden md:block -mt-16">
+      
+    </div>
+    <div  class="mx-2 bg-white rounded-lg  w-72   md:w-8/12 lg:w-6/12 -mt-16">
+        <div id="faq" class="flex pt-5 ">
+          <img class="ms-4" src="assets/images/icon-star.svg" 
+          alt="" />
+          <h1 class="ms-4  mt-2 text-xl font-worksan font-bold">FAQs</h1>
+        </div>
+        <div id="q1" class="flex justify-between mx-4 mt-4 ">
+          <h4  class=" w-48 md:w-80 font-semibold">What is Frontend Mentor, and how will it help me?</h4>
+          <img id="pluslogo1" onclick="plus1()" src="assets/images/icon-plus.svg" alt="">
+          <img id="minuslogo1" onclick="minus1()" class="hidden" src="assets/images/icon-minus.svg" alt="">
+        </div>
+        <div id="ans1" class="hidden">
+          <p class="font-worksan mx-4 mt-5 "> Frontend Mentor
+            offers realistic coding challenges to help developers improve their frontend
+            coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+            all levels and ideal for portfolio building.
+           </p>
+        </div>
+        <div id="q2" class="flex justify-between mx-4 border-t-2 mt-5 pt-4 ">
+          <h4 class="font-semibold">Is Frontend Mentor free?</h4>
+          <img id="pluslogo2" onclick="plus2()" class="" src="assets/images/icon-plus.svg" alt="">
+          <img id="minuslogo2" onclick="minus2()" class="hidden" src="assets/images/icon-minus.svg" alt="">
+        </div>
+        <div id="ans2" class="hidden">
+          <p class="font-worksan mx-4 mt-5">Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skilllevels.</p>
+
+        </div>
+        <div id="q3" class="flex justify-between mx-4 border-t-2 mt-5 pt-4">
+          <h4 class="font-semibold">Can I use Frontend Mentor projects in my portfolio? </h4>
+          <img id="pluslogo3" onclick="plus3()" src="assets/images/icon-plus.svg" alt="">
+          <img id="minuslogo3" onclick="minus3()" class="hidden" src="assets/images/icon-minus.svg" alt="">
+        </div>
+        <div id="ans3" class="hidden">
+          <p class="font-worksan mx-4 mt-5 ">Yes, you can use
+    projects completed on Frontend Mentor in your portfolio. It's an excellent
+    way to showcase your skills to potential employers!</p>
+        </div>
+        <div id="q4" class="flex justify-between mx-4 border-t-2 mt-5 pt-4 pb-5 ">
+          <h4 class="font-semibold">How can I get help if I'm stuck on a Frontend Mentor challenge?</h4>
+          <img class="ms-4" id="pluslogo4" onclick="plus4()" src="assets/images/icon-plus.svg" alt="">
+          <img id="minuslogo4" onclick="minus4()" class="hidden ms-4" src="assets/images/icon-minus.svg" alt=""> 
+        </div>
+        <div id="ans4" class="hidden">
+          <p class="font-worksan mx-4 mt-5 "> The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.</p>
+        </div>
+      </div>
+    </div>
+       
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Inaolaji A. Ridwan</a>.
+    </div>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
